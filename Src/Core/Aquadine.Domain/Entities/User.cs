@@ -7,7 +7,7 @@ namespace Aquadine.Domain.Entities
         public User()
         {
             Favorites = new HashSet<Favorite>();
-            OrderDetails = new HashSet<OrderDetails>();
+            OrderDetails = new HashSet<OrderDetail>();
             NearestNeighbors = new HashSet<NearestNeighbor>();
             UserPearsonCorrelations = new HashSet<PearsonCorrelation>();
             CompareUserPearsonCorrelations = new HashSet<PearsonCorrelation>();
@@ -19,7 +19,7 @@ namespace Aquadine.Domain.Entities
 
         public ICollection<Favorite> Favorites { get; set; }
 
-        public ICollection<OrderDetails> OrderDetails { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
 
         public ICollection<NearestNeighbor> NearestNeighbors { get; set; }
 

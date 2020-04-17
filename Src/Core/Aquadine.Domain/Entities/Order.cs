@@ -7,7 +7,7 @@ namespace Aquadine.Domain.Entities
     {
         public Order()
         {
-            OrderDetails = new HashSet<OrderDetails>();
+            OrderDetails = new HashSet<OrderDetail>();
         }
 
         public int Id { get; set; }
@@ -23,6 +23,6 @@ namespace Aquadine.Domain.Entities
 
         public Location Location { get; set; }
 
-        public ICollection<OrderDetails> OrderDetails { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

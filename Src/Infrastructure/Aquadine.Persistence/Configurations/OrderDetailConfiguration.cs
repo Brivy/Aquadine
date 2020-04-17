@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    class OrderDetailsConfiguration : IEntityTypeConfiguration<OrderDetails>
+    class OrderDetailConfiguration : IEntityTypeConfiguration<OrderDetail>
     {
-        public void Configure(EntityTypeBuilder<OrderDetails> builder)
+        public void Configure(EntityTypeBuilder<OrderDetail> builder)
         {
             builder.Property(x => x.Id)
                 .ValueGeneratedOnAdd()
