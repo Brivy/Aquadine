@@ -2,16 +2,11 @@
 
 namespace Aquadine.Domain.Entities
 {
-    class Product
+    public class Product
     {
-        public Product()
-        {
-            IngredientList = new HashSet<Ingredient>();
-        }
-
         public int Id { get; private set; }
 
-        public int Location { get; set; }
+        public int LocationId { get; set; }
 
         public string Title { get; set; }
 
@@ -21,8 +16,17 @@ namespace Aquadine.Domain.Entities
 
         public string IngredientChoice { get; set; }
 
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
-        public ICollection<Ingredient> IngredientList { get; set; }
+
+        public Location Location { get; set; }
+        
+        public ICollection<Favorite> Favorites { get; set; }
+
+        public ICollection<OrderDetails> OrderDetails { get; set; }
+
+        public ICollection<NearestNeighbor> NearestNeighbors { get; set; }
+    
+        public ICollection<ProductIngredient> ProductIngredients { get; set; }
     }
 }

@@ -1,13 +1,16 @@
-﻿namespace Aquadine.Domain.Entities
+﻿using System.Collections.Generic;
+
+namespace Aquadine.Domain.Entities
 {
-    class Ingredient
+    public class Ingredient
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        public double Score { get; set; }
+        
+        public ICollection<ProductIngredient> ProductIngredients { get; set; }
 
-        public int Amount { get; set; }
+        public ICollection<UserProfile> UserProfiles { get; set; }
     }
 }

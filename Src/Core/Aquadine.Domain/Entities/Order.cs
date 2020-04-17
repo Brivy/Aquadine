@@ -1,17 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Aquadine.Domain.Entities
 {
-    class Order
+    public class Order
     {
         public int Id { get; set; }
 
         public int LocationId { get; set; }
 
-        public double Price { get; set; }
+        public decimal TotalPrice { get; set; }
 
         public DateTime DateOrderd { get; set; }
 
         public DateTime DateCompleted { get; set; }
+
+
+        public Location Location { get; set; }
+
+        public ICollection<OrderDetails> OrderDetails { get; set; }
     }
 }
