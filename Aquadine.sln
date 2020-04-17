@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1B15AF6C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A0482F82-903D-4B18-87C1-BFF53626D84F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Core", "Src\Core\Aquadine.Core\Aquadine.Core.csproj", "{D0E10437-0E3F-40BF-8610-05B0743A7DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Application", "Src\Core\Aquadine.Core\Aquadine.Application.csproj", "{D0E10437-0E3F-40BF-8610-05B0743A7DC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Domain", "Src\Core\Aquadine.Domain\Aquadine.Domain.csproj", "{BE9427F4-FD2F-4107-9164-3827E4F21AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Domain", "Src\Core\Aquadine.Domain\Aquadine.Domain.csproj", "{BE9427F4-FD2F-4107-9164-3827E4F21AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Common", "Src\Core\Aquadine.Common\Aquadine.Common.csproj", "{017E3EA2-3743-48C9-A066-DEEC077C70A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Common", "Src\Core\Aquadine.Common\Aquadine.Common.csproj", "{017E3EA2-3743-48C9-A066-DEEC077C70A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Infrastructure", "Src\Infrastructure\Aquadine.Infrastructure\Aquadine.Infrastructure.csproj", "{BFBA3F13-4ACB-4D69-9FBB-C5715BB7231E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Infrastructure", "Src\Infrastructure\Aquadine.Infrastructure\Aquadine.Infrastructure.csproj", "{BFBA3F13-4ACB-4D69-9FBB-C5715BB7231E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Persistence", "Src\Infrastructure\Aquadine.Persistence\Aquadine.Persistence.csproj", "{98B291E5-67C7-49F9-B3A9-53E0B9EEB4F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Persistence", "Src\Infrastructure\Aquadine.Persistence\Aquadine.Persistence.csproj", "{98B291E5-67C7-49F9-B3A9-53E0B9EEB4F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Presentation", "Src\Presentation\Aquadine.Presentation\Aquadine.Presentation.csproj", "{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Presentation", "Src\Presentation\Aquadine.Presentation\Aquadine.Presentation.csproj", "{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
