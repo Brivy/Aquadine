@@ -1,9 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Aquadine.Domain.Entities
 {
     public class Product
     {
+        public Product()
+        {
+            Favorites = new HashSet<Favorite>();
+            OrderDetails = new HashSet<OrderDetails>();
+            NearestNeighbors = new HashSet<NearestNeighbor>();
+            ProductIngredients = new HashSet<ProductIngredient>();
+        }
+
         public int Id { get; private set; }
 
         public int LocationId { get; set; }
@@ -17,6 +26,10 @@ namespace Aquadine.Domain.Entities
         public string IngredientChoice { get; set; }
 
         public decimal Price { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public DateTime LastChanged { get; set; }
 
 
         public Location Location { get; set; }

@@ -4,9 +4,17 @@ namespace Aquadine.Domain.Entities
 {
     public class User
     {
-        public int Id { get; set; }
+        public User()
+        {
+            Favorites = new HashSet<Favorite>();
+            OrderDetails = new HashSet<OrderDetails>();
+            NearestNeighbors = new HashSet<NearestNeighbor>();
+            UserPearsonCorrelations = new HashSet<PearsonCorrelation>();
+            CompareUserPearsonCorrelations = new HashSet<PearsonCorrelation>();
+            UserProfiles = new HashSet<UserProfile>();
+        }
 
-        public string Name { get; set; }
+        public int Id { get; set; }
 
 
         public ICollection<Favorite> Favorites { get; set; }

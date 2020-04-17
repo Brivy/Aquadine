@@ -5,6 +5,11 @@ namespace Aquadine.Domain.Entities
 {
     public class Order
     {
+        public Order()
+        {
+            OrderDetails = new HashSet<OrderDetails>();
+        }
+
         public int Id { get; set; }
 
         public int LocationId { get; set; }
@@ -13,7 +18,7 @@ namespace Aquadine.Domain.Entities
 
         public DateTime DateOrderd { get; set; }
 
-        public DateTime DateCompleted { get; set; }
+        public DateTime? DateCompleted { get; set; }
 
 
         public Location Location { get; set; }

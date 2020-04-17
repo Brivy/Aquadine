@@ -4,6 +4,12 @@ namespace Aquadine.Domain.Entities
 {
     public class Location
     {
+        public Location()
+        {
+            Orders = new HashSet<Order>();
+            Locations = new HashSet<Location>();
+        }
+
         public int Id { get; set; }
 
         public string Name { get; set; }

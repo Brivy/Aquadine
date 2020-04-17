@@ -4,6 +4,12 @@ namespace Aquadine.Domain.Entities
 {
     public class Ingredient
     {
+        public Ingredient()
+        {
+            ProductIngredients = new HashSet<ProductIngredient>();
+            UserProfiles = new HashSet<UserProfile>();
+        }
+
         public int Id { get; set; }
 
         public string Name { get; set; }
