@@ -7,12 +7,7 @@ namespace Aquadine.Persistence
 {
     public class AquadineDbContext : DbContext, IAquadineDbContext
     {
-        public AquadineDbContext()
-        {
-
-        }
-
-        public AquadineDbContext(DbContextOptions<AquadineDbContext> options) : base(options)
+        public AquadineDbContext(DbContextOptions options) : base(options)
         {
 
         }
