@@ -2,6 +2,8 @@
 {
     public class PearsonCorrelation
     {
+        public int Id { get; set; }
+
         public int UserId { get; set; }
 
         public int CompareUserId { get; set; }

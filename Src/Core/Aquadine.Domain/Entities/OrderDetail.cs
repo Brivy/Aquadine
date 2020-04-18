@@ -8,7 +8,7 @@
 
         public int UserId { get; set; }
 
-        public int Productid { get; set; }
+        public int ProductId { get; set; }
 
         public short Amount { get; set; }
 

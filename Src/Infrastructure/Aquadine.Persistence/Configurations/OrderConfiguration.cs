@@ -24,6 +24,12 @@ namespace Aquadine.Persistence.Configurations
 
             builder.Property(x => x.DateCompleted)
                 .HasColumnType("datetime");
+
+            builder.HasOne(x => x.Location)
+                .WithMany(y => y.Orders)
+                .HasForeignKey(x => x.LocationId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .HasConstraintName("FK_Orders_Locations");
         }
     }
 }

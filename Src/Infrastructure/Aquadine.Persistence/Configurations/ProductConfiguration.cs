@@ -37,7 +37,14 @@ namespace Aquadine.Persistence.Configurations
                 .IsRequired();
 
             builder.Property(x => x.LastChanged)
+                .HasColumnType("datetime")
                 .IsRequired();
+
+            builder.HasOne(x => x.Location)
+                .WithMany(y => y.Products)
+                .HasForeignKey(x => x.LocationId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .HasConstraintName("FK_Products_Locations");
         }
     }
 }

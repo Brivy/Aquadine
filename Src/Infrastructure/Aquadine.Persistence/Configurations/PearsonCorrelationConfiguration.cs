@@ -8,6 +8,10 @@ namespace Aquadine.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<PearsonCorrelation> builder)
         {
+            builder.Property(x => x.Id)
+                .ValueGeneratedOnAdd()
+                .IsRequired();
+
             builder.Property(x => x.UserId)
                 .IsRequired();
 
@@ -22,13 +26,13 @@ namespace Aquadine.Persistence.Configurations
                 .WithMany(y => y.UserPearsonCorrelations)
                 .HasForeignKey(x => x.UserId)
                 .OnDelete(DeleteBehavior.Restrict)
-                .HasConstraintName("FK_PearsonCorrelations_User");
+                .HasConstraintName("FK_Pearson_Correlations_Users");
 
             builder.HasOne(x => x.CompareUser)
                 .WithMany(y => y.CompareUserPearsonCorrelations)
                 .HasForeignKey(x => x.CompareUserId)
                 .OnDelete(DeleteBehavior.Restrict)
-                .HasConstraintName("FK_PearsonCorrelations_CompareUser");
+                .HasConstraintName("FK_Pearson_Correlations_Compare_Users");
         }
     }
 }
