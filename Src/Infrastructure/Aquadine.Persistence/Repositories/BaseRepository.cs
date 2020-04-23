@@ -1,4 +1,5 @@
 ﻿using Aquadine.Persistence.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aquadine.Persistence.Repositories
 {
@@ -7,6 +8,8 @@ namespace Aquadine.Persistence.Repositories
     {
         protected readonly IAquadineContext Context;
 
+        protected DbSet<TEntity> Set => Context.Set<TEntity>();
+
         public BaseRepository(IAquadineContext context)
         {
             Context = context;
@@ -14,17 +17,17 @@ namespace Aquadine.Persistence.Repositories
 
         public void Add(TEntity entity)
         {
-            Context.Set<TEntity>().Add(entity);
+            Set.Add(entity);
         }
 
         public void Update(TEntity entity)
         {
-            Context.Set<TEntity>().Update(entity);
+            Set.Update(entity);
         }
 
         public void Delete(TEntity entity)
         {
-            Context.Set<TEntity>().Remove(entity);
+            Set.Remove(entity);
         }
     }
 }
