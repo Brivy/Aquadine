@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1B15AF6C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A0482F82-903D-4B18-87C1-BFF53626D84F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Application", "Src\Core\Aquadine.Core\Aquadine.Application.csproj", "{D0E10437-0E3F-40BF-8610-05B0743A7DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Application", "Src\Core\Aquadine.Application\Aquadine.Application.csproj", "{D0E10437-0E3F-40BF-8610-05B0743A7DC8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Domain", "Src\Core\Aquadine.Domain\Aquadine.Domain.csproj", "{BE9427F4-FD2F-4107-9164-3827E4F21AE1}"
 EndProject

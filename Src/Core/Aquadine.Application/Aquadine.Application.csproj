@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Features\Products\Services\" />
+    <Folder Include="Features\Products\Requests\" />
+    <Folder Include="Features\Scrapers\Services\" />
+    <Folder Include="Features\Scrapers\Requests\" />
+    <Folder Include="Features\Suggestions\Services\" />
+    <Folder Include="Features\Suggestions\Requests\" />
+  </ItemGroup>
+
+</Project>

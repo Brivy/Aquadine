@@ -1,14 +1,12 @@
 ﻿namespace Aquadine.Domain.Entities
 {
-    public class UserProfile
+    public class UserProfile : SuggestionScore
     {
         public int Id { get; set; }
 
         public int UserId { get; set; }
 
         public int IngredientId { get; set; }
-
-        public double Score { get; set; }
 
 
         public User User { get; set; }
