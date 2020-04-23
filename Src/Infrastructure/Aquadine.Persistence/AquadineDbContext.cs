@@ -5,9 +5,9 @@ using System.Reflection;
 
 namespace Aquadine.Persistence
 {
-    internal class AquadineContext : DbContext, IAquadineContext
+    public class AquadineDbContext : DbContext, IAquadineDbContext
     {
-        public AquadineContext(DbContextOptions options) : base(options)
+        public AquadineDbContext(DbContextOptions options) : base(options)
         {
 
         }

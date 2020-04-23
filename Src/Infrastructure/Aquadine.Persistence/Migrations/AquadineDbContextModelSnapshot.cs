@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Aquadine.Persistence.Migrations
 {
-    [DbContext(typeof(AquadineContext))]
+    [DbContext(typeof(AquadineDbContext))]
     partial class AquadineDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

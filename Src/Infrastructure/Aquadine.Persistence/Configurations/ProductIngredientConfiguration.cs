@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    internal class ProductIngredientConfiguration : IEntityTypeConfiguration<ProductIngredient>
+    class ProductIngredientConfiguration : IEntityTypeConfiguration<ProductIngredient>
     {
         public void Configure(EntityTypeBuilder<ProductIngredient> builder)
         {
