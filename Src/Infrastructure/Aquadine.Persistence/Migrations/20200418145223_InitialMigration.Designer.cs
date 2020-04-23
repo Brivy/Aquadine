@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Aquadine.Persistence.Migrations
 {
-    [DbContext(typeof(AquadineDbContext))]
+    [DbContext(typeof(AquadineContext))]
     [Migration("20200418145223_InitialMigration")]
     partial class InitialMigration
     {

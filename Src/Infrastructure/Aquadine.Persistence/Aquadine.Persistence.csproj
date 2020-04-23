@@ -18,10 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Aquadine.Domain\Aquadine.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Repositories\Interfaces\" />
+    <ProjectReference Include="..\Aquadine.Persistence.Abstractions\Aquadine.Persistence.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
