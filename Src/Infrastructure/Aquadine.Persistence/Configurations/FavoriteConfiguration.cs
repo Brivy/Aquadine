@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    internal class FavoriteConfiguration : IEntityTypeConfiguration<Favorite>
+    class FavoriteConfiguration : IEntityTypeConfiguration<Favorite>
     {
         public void Configure(EntityTypeBuilder<Favorite> builder)
         {

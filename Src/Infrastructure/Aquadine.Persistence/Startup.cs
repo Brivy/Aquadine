@@ -15,7 +15,7 @@ namespace Aquadine.Persistence
 
             services.AddRepositories(repoNameSpace, interfaceNameSpace);
 
-            services.AddDbContext<IAquadineContext, AquadineContext>((options) => 
+            services.AddDbContext<IAquadineDbContext, AquadineDbContext>((options) => 
                 options.UseSqlServer(configuration.GetConnectionString("AquadineDbConnection")));
         }
     }

@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Aquadine.Persistence.Extensions
 {
-    internal static class ServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
         /// <summary>
         /// Automatically dependency inject repositories

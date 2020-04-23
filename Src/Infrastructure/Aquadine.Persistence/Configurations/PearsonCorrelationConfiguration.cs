@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    internal class PearsonCorrelationConfiguration : IEntityTypeConfiguration<PearsonCorrelation>
+    class PearsonCorrelationConfiguration : IEntityTypeConfiguration<PearsonCorrelation>
     {
         public void Configure(EntityTypeBuilder<PearsonCorrelation> builder)
         {

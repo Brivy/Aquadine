@@ -6,9 +6,9 @@ using System.IO;
 
 namespace Aquadine.Persistence
 {
-    internal class AquadineDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AquadineContext>
+    public class AquadineDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AquadineDbContext>
     {
-        public AquadineContext CreateDbContext(string[] args)
+        public AquadineDbContext CreateDbContext(string[] args)
         {
             var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "../..", "Presentation", "Aquadine.Presentation", "appsettings.Development.json");
 
@@ -16,7 +16,7 @@ namespace Aquadine.Persistence
                 .AddJsonFile(jsonPath)
                 .Build();
 
-            return new AquadineContext(new DbContextOptionsBuilder().UseSqlServer(configuration.GetConnectionString("AquadineDbConnection")).Options);
+            return new AquadineDbContext(new DbContextOptionsBuilder().UseSqlServer(configuration.GetConnectionString("AquadineDbConnection")).Options);
         }
     }
 }
