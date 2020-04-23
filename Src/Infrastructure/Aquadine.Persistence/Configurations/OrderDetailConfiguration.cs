@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    class OrderDetailConfiguration : IEntityTypeConfiguration<OrderDetail>
+    internal class OrderDetailConfiguration : IEntityTypeConfiguration<OrderDetail>
     {
         public void Configure(EntityTypeBuilder<OrderDetail> builder)
         {

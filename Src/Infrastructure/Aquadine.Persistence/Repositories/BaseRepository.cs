@@ -5,9 +5,9 @@ namespace Aquadine.Persistence.Repositories
     internal abstract class BaseRepository<TEntity> : IBaseRepository<TEntity>
         where TEntity : class
     {
-        protected readonly IAquadineDbContext Context;
+        protected readonly IAquadineContext Context;
 
-        public BaseRepository(IAquadineDbContext context)
+        public BaseRepository(IAquadineContext context)
         {
             Context = context;
         }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    class NearestNeighborConfiguration : IEntityTypeConfiguration<NearestNeighbor>
+    internal class NearestNeighborConfiguration : IEntityTypeConfiguration<NearestNeighbor>
     {
         public void Configure(EntityTypeBuilder<NearestNeighbor> builder)
         {

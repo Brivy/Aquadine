@@ -7,12 +7,12 @@ namespace Aquadine.Persistence
 {
     internal class UnitOfWork : IUnitOfWork
     {
-        private readonly IAquadineDbContext _context;
+        private readonly IAquadineContext _context;
         private readonly IServiceProvider _serviceProvider;
 
         private IProductRepository _productRepository;
 
-        public UnitOfWork(IAquadineDbContext context, IServiceProvider serviceProvider)
+        public UnitOfWork(IAquadineContext context, IServiceProvider serviceProvider)
         {
             _context = context;
             _serviceProvider = serviceProvider;

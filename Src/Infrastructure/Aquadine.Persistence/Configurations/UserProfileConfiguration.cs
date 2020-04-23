@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
 {
-    class UserProfileConfiguration : IEntityTypeConfiguration<UserProfile>
+    internal class UserProfileConfiguration : IEntityTypeConfiguration<UserProfile>
     {
         public void Configure(EntityTypeBuilder<UserProfile> builder)
         {

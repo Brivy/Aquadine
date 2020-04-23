@@ -9,7 +9,7 @@ namespace Aquadine.Persistence.Repositories
 {
     internal class ProductRepository : BaseRepository<Product>, IProductRepository
     {
-        public ProductRepository(IAquadineDbContext context) : base(context)
+        public ProductRepository(IAquadineContext context) : base(context)
         {
 
         }
