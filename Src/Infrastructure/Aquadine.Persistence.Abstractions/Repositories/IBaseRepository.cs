@@ -1,6 +1,6 @@
 ﻿namespace Aquadine.Persistence.Interfaces
 {
-    public interface IRepository<TEntity>
+    public interface IBaseRepository<TEntity>
         where TEntity : class
     {
         void Add(TEntity entity);

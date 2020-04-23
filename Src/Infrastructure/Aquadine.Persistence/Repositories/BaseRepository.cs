@@ -2,12 +2,12 @@
 
 namespace Aquadine.Persistence.Repositories
 {
-    internal abstract class Repository<TEntity> : IRepository<TEntity>
+    internal abstract class BaseRepository<TEntity> : IBaseRepository<TEntity>
         where TEntity : class
     {
         protected readonly IAquadineDbContext Context;
 
-        public Repository(IAquadineDbContext context)
+        public BaseRepository(IAquadineDbContext context)
         {
             Context = context;
         }

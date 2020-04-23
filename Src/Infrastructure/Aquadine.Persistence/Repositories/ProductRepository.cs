@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Aquadine.Persistence.Repositories
 {
-    internal class ProductRepository : Repository<Product>, IProductRepository
+    internal class ProductRepository : BaseRepository<Product>, IProductRepository
     {
         public ProductRepository(IAquadineDbContext context) : base(context)
         {

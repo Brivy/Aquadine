@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Aquadine.Domain\Aquadine.Domain.csproj" />
+    <ProjectReference Include="..\Aquadine.Persistence.Abstractions\Aquadine.Persistence.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
