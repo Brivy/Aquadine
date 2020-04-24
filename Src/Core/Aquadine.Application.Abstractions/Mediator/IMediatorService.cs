@@ -1,6 +1,6 @@
 ﻿namespace Aquadine.Application.Abstractions.Mediator
 {
-    public interface IMediatorService : ICommandSender, IQuerySender
+    public interface IMediatorService : ICommandSender, IQuerySender, IEventPublisher
     {
 
     }
