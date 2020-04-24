@@ -1,5 +1,5 @@
 ﻿using Aquadine.Application.Abstractions.Mediator;
-using Aquadine.Application.Core.Services;
+using Aquadine.Application.Core.Services.Mediator;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +18,10 @@ namespace Aquadine.Application
         private static void AddMediatorService(this IServiceCollection services, List<Assembly> assemblies)
         {
             services.AddMediatR(assemblies.ToArray());
-            services.AddScoped(typeof(IMediatorService), typeof(MediatorService));
+
+            services.AddScoped(typeof(ICommandSender), typeof(CommandService));
+            services.AddScoped(typeof(IEventPublisher), typeof(EventService));
+            services.AddScoped(typeof(IQuerySender), typeof(QueryService));
         }
     }
 }
