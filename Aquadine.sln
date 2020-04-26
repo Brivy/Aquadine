@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Presentation", "Sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Persistence.Abstractions", "Src\Infrastructure\Aquadine.Persistence.Abstractions\Aquadine.Persistence.Abstractions.csproj", "{8683B1E7-30EE-484C-AA60-E7FF51AE092A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquadine.Application.Abstractions", "Src\Core\Aquadine.Application.Abstractions\Aquadine.Application.Abstractions.csproj", "{90B337A7-2DA8-4157-880F-284B5458CFE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Application.Abstractions", "Src\Core\Aquadine.Application.Abstractions\Aquadine.Application.Abstractions.csproj", "{90B337A7-2DA8-4157-880F-284B5458CFE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Connect", "Src\Connect\Aquadine.Connect.csproj", "{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{90B337A7-2DA8-4157-880F-284B5458CFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B337A7-2DA8-4157-880F-284B5458CFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90B337A7-2DA8-4157-880F-284B5458CFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
