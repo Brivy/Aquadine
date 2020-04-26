@@ -1,10 +1,11 @@
-﻿using MediatR;
+﻿using Aquadine.Application.Abstractions.Mediator;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Aquadine.Application.Core.Services.Mediator
 {
-    internal class EventService
+    internal class EventService : IEventPublisher
     {
         private readonly IMediator _mediator;
 
