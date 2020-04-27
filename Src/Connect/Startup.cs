@@ -10,7 +10,7 @@ namespace Aquadine.Connect
         public static void ConnectAquadineProjects(this IServiceCollection servies, IConfiguration configuration, Assembly callingAssembly)
         {
             var assemblyList = new List<Assembly>
-            { 
+            {
                 callingAssembly,
                 typeof(Application.Startup).Assembly,
                 typeof(Persistence.Startup).Assembly

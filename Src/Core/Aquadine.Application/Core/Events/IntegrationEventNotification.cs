@@ -2,7 +2,7 @@
 
 namespace Aquadine.Application.Core.Events
 {
-    class IntegrationEventNotification<TEvent> : INotification
+    internal class IntegrationEventNotification<TEvent> : INotification
     {
         public IntegrationEventNotification(TEvent @event)
         {

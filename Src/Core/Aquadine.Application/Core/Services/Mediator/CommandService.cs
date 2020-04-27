@@ -1,4 +1,4 @@
-﻿using Aquadine.Application.Abstractions.Mediator;
+﻿using Aquadine.Application.Core.Interfaces.Mediator;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;

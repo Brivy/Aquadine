@@ -33,13 +33,13 @@ namespace Aquadine.Domain.Entities
 
 
         public Location Location { get; set; }
-        
+
         public ICollection<Favorite> Favorites { get; set; }
 
         public ICollection<OrderDetail> OrderDetails { get; set; }
 
         public ICollection<NearestNeighbor> NearestNeighbors { get; set; }
-    
+
         public ICollection<ProductIngredient> ProductIngredients { get; set; }
     }
 }

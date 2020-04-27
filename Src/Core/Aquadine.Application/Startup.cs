@@ -1,4 +1,4 @@
-﻿using Aquadine.Application.Abstractions.Mediator;
+﻿using Aquadine.Application.Core.Interfaces.Mediator;
 using Aquadine.Application.Core.Services.Mediator;
 using MediatR;
 using Microsoft.Extensions.Configuration;

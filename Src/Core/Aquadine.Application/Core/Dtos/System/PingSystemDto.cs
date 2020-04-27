@@ -1,4 +1,4 @@
-﻿namespace Aquadine.Application.Abstractions.Dtos.System
+﻿namespace Aquadine.Application.Core.Dtos.System
 {
     public class PingSystemDto
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Aquadine.Application.Abstractions.Mediator
+namespace Aquadine.Application.Core.Interfaces.Mediator
 {
     public interface IEventPublisher
     {

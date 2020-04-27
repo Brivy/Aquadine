@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Connect\Aquadine.Connect.csproj" />
-    <ProjectReference Include="..\..\Core\Aquadine.Application.Abstractions\Aquadine.Application.Abstractions.csproj" />
     <ProjectReference Include="..\..\Core\Aquadine.Application\Aquadine.Application.csproj" />
   </ItemGroup>
 
