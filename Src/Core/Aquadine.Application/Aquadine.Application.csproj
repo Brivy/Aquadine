@@ -19,7 +19,6 @@
     <Folder Include="Features\Suggestions\Services\" />
     <Folder Include="Features\System\Commands\" />
     <Folder Include="Features\System\Events\" />
-    <Folder Include="Features\System\Queries\" />
     <Folder Include="Features\System\Services\" />
   </ItemGroup>
 

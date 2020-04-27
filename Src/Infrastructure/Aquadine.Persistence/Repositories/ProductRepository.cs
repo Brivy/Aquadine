@@ -1,5 +1,6 @@
 ﻿using Aquadine.Domain.Entities;
 using Aquadine.Persistence.Interfaces;
+using Aquadine.Persistence.Repositories.Base;
 using Aquadine.Persistence.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

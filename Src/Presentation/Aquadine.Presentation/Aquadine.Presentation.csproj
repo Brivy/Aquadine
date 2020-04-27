@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Connect\Aquadine.Connect.csproj" />
+    <ProjectReference Include="..\..\Core\Aquadine.Application.Abstractions\Aquadine.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Core\Aquadine.Application\Aquadine.Application.csproj" />
+  </ItemGroup>
+
 </Project>
