@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Aquadine.Domain.Entities;
+﻿using Aquadine.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations

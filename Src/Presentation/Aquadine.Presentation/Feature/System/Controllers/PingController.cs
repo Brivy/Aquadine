@@ -1,5 +1,4 @@
-﻿using Aquadine.Application.Abstractions.Dtos.System;
-using Aquadine.Application.Abstractions.Mediator;
+﻿using Aquadine.Application.Core.Interfaces.Mediator;
 using Aquadine.Application.Features.System.Queries.Ping;
 using Aquadine.Presentation.Core.Controllers;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +17,7 @@ namespace Aquadine.Presentation.Feature.System.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(CancellationToken cancellationToken = default)
         {
-            var result = await _querySender.SendQueryAsync<PingSystemDto>(new PingSystemQuery(), cancellationToken);
+            var result = await _querySender.SendQueryAsync(new PingSystemQuery(), cancellationToken);
 
             if (result == null)
             {

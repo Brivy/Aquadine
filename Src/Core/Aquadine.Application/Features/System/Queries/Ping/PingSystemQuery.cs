@@ -1,5 +1,5 @@
-﻿using Aquadine.Application.Abstractions.Dtos.System;
-using Aquadine.Application.Abstractions.Mediator;
+﻿using Aquadine.Application.Core.Dtos.System;
+using Aquadine.Application.Core.Interfaces.Mediator;
 
 namespace Aquadine.Application.Features.System.Queries.Ping
 {

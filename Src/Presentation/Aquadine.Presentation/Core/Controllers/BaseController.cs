@@ -1,4 +1,4 @@
-﻿using Aquadine.Application.Abstractions.Mediator;
+﻿using Aquadine.Application.Core.Interfaces.Mediator;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Aquadine.Presentation.Core.Controllers
