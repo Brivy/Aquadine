@@ -23,7 +23,7 @@ namespace Aquadine.Domain.Entities
         public decimal DeliveryMinOrder { get; set; }
 
 
-        public ICollection<Order> Orders { get; set; } 
+        public ICollection<Order> Orders { get; set; }
 
         public ICollection<Product> Products { get; set; }
     }

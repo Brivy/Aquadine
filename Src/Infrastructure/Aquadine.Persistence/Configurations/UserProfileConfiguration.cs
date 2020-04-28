@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Aquadine.Domain.Entities;
+﻿using Aquadine.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Aquadine.Persistence.Configurations
@@ -30,7 +30,7 @@ namespace Aquadine.Persistence.Configurations
                 .WithMany(y => y.UserProfiles)
                 .HasForeignKey(x => x.IngredientId)
                 .OnDelete(DeleteBehavior.Restrict)
-                .HasConstraintName("FK_User_Profiles_Ingredients");           
+                .HasConstraintName("FK_User_Profiles_Ingredients");
         }
     }
 }

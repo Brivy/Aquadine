@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Aquadine.Persistence.Interfaces
 {
-    interface IAquadineDbContext
+    internal interface IAquadineContext : IDbContext
     {
         DbSet<Favorite> Favorites { get; set; }
 

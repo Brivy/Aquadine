@@ -14,7 +14,7 @@ namespace Aquadine.Domain.Entities
 
         public string Name { get; set; }
 
-        
+
         public ICollection<ProductIngredient> ProductIngredients { get; set; }
 
         public ICollection<UserProfile> UserProfiles { get; set; }

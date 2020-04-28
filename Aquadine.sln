@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Persistence", "Src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Presentation", "Src\Presentation\Aquadine.Presentation\Aquadine.Presentation.csproj", "{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquadine.Connect", "Src\Connect\Aquadine.Connect.csproj", "{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{BFBA3F13-4ACB-4D69-9FBB-C5715BB7231E} = {3AAAA2C1-0311-44C3-BD0D-BF83E5B0538F}
 		{98B291E5-67C7-49F9-B3A9-53E0B9EEB4F5} = {3AAAA2C1-0311-44C3-BD0D-BF83E5B0538F}
 		{A2CF95D5-156C-4E07-A8D2-EBF1ED8FEE2F} = {D546EBE7-CAD4-4C09-A3A6-F0D6CF93664E}
+		{D0AFC989-C34B-4E99-A8B5-42F9BF6F3E5B} = {A0482F82-903D-4B18-87C1-BFF53626D84F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2687CF3-2523-4784-9591-0CC4D29BA702}

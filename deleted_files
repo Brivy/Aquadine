@@ -1,0 +1,4 @@
+D	Src/Infrastructure/Aquadine.Persistence/AquadineContext.cs
+D	Src/Infrastructure/Aquadine.Persistence/Interfaces/IAquadineContext.cs
+D	Src/Infrastructure/Aquadine.Persistence/Interfaces/IDbContext.cs
+D	Src/Infrastructure/Aquadine.Persistence/UnitOfWork.cs

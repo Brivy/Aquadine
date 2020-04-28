@@ -5,13 +5,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Core\" />
+    <Folder Include="Features\Products\Events\" />
+    <Folder Include="Features\Products\Queries\" />
     <Folder Include="Features\Products\Services\" />
-    <Folder Include="Features\Products\Requests\" />
+    <Folder Include="Features\Products\Commands\" />
+    <Folder Include="Features\Scrapers\Commands\" />
+    <Folder Include="Features\Scrapers\Events\" />
+    <Folder Include="Features\Scrapers\Queries\" />
     <Folder Include="Features\Scrapers\Services\" />
-    <Folder Include="Features\Scrapers\Requests\" />
+    <Folder Include="Features\Suggestions\Commands\" />
+    <Folder Include="Features\Suggestions\Events\" />
+    <Folder Include="Features\Suggestions\Queries\" />
     <Folder Include="Features\Suggestions\Services\" />
-    <Folder Include="Features\Suggestions\Requests\" />
+    <Folder Include="Features\System\Commands\" />
+    <Folder Include="Features\System\Events\" />
+    <Folder Include="Features\System\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
   </ItemGroup>
 
 </Project>

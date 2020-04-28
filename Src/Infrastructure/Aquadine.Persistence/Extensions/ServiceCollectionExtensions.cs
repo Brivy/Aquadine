@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace Aquadine.Persistence.Extensions
 {
@@ -20,6 +21,14 @@ namespace Aquadine.Persistence.Extensions
 
             foreach (var repo in repositories)
             {
+                var filter = Attribute.GetCustomAttribute(repo, typeof(CompilerGeneratedAttribute));
+
+                // Skip dependency injection for compiler generated types
+                if (filter != null)
+                {
+                    continue;
+                }
+
                 // Get the repository interface and throw an exception if more than one repository interface is found
                 var repoInterface = repo.GetInterfaces()
                     .Where(x => string.Equals(x.Namespace, interfaceNameSpace, StringComparison.Ordinal))
