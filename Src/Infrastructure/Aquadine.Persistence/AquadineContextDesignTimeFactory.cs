@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Aquadine.Persistence
 {
-    internal class AquadineDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AquadineContext>
+    internal class AquadineContextDesignTimeFactory : IDesignTimeDbContextFactory<AquadineContext>
     {
         public AquadineContext CreateDbContext(string[] args)
         {
